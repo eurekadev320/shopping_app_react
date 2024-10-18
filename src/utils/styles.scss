@@ -1,0 +1,30 @@
+@function px($size) {
+  @return #{$size}px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  cursor: pointer;
+  transition: transform 0.1s;
+  user-select: none;
+  @extend .column;
+  align-items: center;
+  justify-content: center;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

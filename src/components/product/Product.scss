@@ -1,0 +1,46 @@
+@import "../../utils/styles.scss";
+
+.product-container {
+  width: px(200);
+  @extend .row;
+  flex-wrap: wrap;
+  margin-right: px(20);
+  margin-bottom: px(40);
+
+  .product-img {
+    width: 100%;
+    height: px(150);
+    object-fit: contain;
+  }
+
+  .product-title {
+    width: 100%;
+    margin-top: px(20);
+    margin-bottom: px(5);
+    font-size: px(12);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .product-price {
+    margin-bottom: px(5);
+    width: 100%;
+    font-size: px(12);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .product-addcart-btn {
+    width: 100%;
+    height: px(40);
+    border: px(1) solid #aeaeae;
+    @extend .button;
+    flex-direction: row;
+    font-size: px(14);
+    color: #38c2de;
+
+    svg {
+      margin-right: px(5);
+    }
+  }
+}
